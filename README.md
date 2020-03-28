@@ -1,5 +1,5 @@
 # noritheyellow.github.com
 
-## bezalellf.com
+## bezalelfs.com
 
 * My First Gitblog
