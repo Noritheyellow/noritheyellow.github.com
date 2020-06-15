@@ -12,27 +12,29 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Noricumentation"
+title                    : "Norcument"
 title_separator          : "-"
-subtitle                 : "노리큐멘테이션" # site tagline that appears below site title in masthead
+subtitle                 : "Version 1.0.0" # site tagline that appears below site title in masthead
 name                     : "David Hwang"
 description              : "record my portfolios & knowhows & studies & etc."
 url                      : "https://noritheyellow.github.io//" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Noritheyellow/noritheyellow.github.com" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/teaserImg.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/teaserImg.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "Noricumentation" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Norcument" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+
+# 댓글 관련
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : https-noritheyellow-github-io # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -282,3 +284,11 @@ defaults:
       comments: # true
       share: true
       related: true
+    
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profiles: true

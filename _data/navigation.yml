@@ -1,7 +1,14 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "Quick-Start Guide"
+  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    # 다시 메인 페이지로 돌아옴.
+  - title: "Home"
+    url: https://noritheyellow.github.io/
+  - title: "Categories"
+    url: /categories/
+  - title: "Comments"
+    url: https://https-noritheyellow-github-io.disqus.com/admin/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
